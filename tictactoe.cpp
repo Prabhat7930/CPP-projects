@@ -32,7 +32,7 @@ int wincheck(char tic[4][4]) {
 
     for(int i=1;i<4;i++) {
         if(tic[i][1] != ' ' && tic[i][1] == tic[i][2] && tic[i][2] == tic[i][3]){       // column checking
-            return tic[i][0] == 'X' ? 1:2;
+            return tic[i][1] == 'X' ? 1:2;
         }
     }
     for(int j=1;j<4;j++) {
